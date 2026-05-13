@@ -7,14 +7,6 @@
   "bin": {
     "fb-cli": "cli.js"
   },
-  "scripts": {
-    "push": "npm publish && node ./messageDing.js"
-  },
-  "homepage": "http://192.168.0.161/module/fb-cli",
-  "repository": {
-    "type": "git",
-    "url": "http://192.168.0.161/module/fb-cli.git"
-  },
   "keywords": [
     "cli", 
     "fb-cli",
