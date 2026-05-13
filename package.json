@@ -1,0 +1,45 @@
+{
+  "name": "fb-cli",
+  "version": "2.5.9",
+  "description": "创建初始化新组件项目",
+  "UpdateDescription": "优化Vue项目模板规则，减少上下文",
+  "main": "cli.js",
+  "bin": {
+    "fb-cli": "cli.js"
+  },
+  "scripts": {
+    "push": "npm publish && node ./messageDing.js"
+  },
+  "homepage": "http://192.168.0.161/module/fb-cli",
+  "repository": {
+    "type": "git",
+    "url": "http://192.168.0.161/module/fb-cli.git"
+  },
+  "keywords": [
+    "cli", 
+    "fb-cli",
+    "vue2",
+    "vue3",
+    "solid",
+    "rollup",
+    "rolldown",
+    "prettier",
+    "web-components",
+    "npm",
+    "fb-vue2-template",
+    "fb-vue3-template",
+    "rollup-npm-template",
+    "web-components-template",
+    "web-components-solid-template",
+    "npm-templace"
+  ],
+  "author": "Vincent",
+  "license": "ISC",
+  "dependencies": {
+    "@clack/prompts": "^1.1.0",
+    "axios": "^1.13.6",
+    "comment-json": "^4.6.2",
+    "fs-extra": "^11.3.4",
+    "picocolors": "^1.1.1"
+  }
+}

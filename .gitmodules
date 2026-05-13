@@ -1,0 +1,20 @@
+[submodule "rollup-npm-template"]
+	path = rollup-npm-template
+	url = http://192.168.0.161/module/rollup-npm-template.git
+[submodule "npm-templace"]
+	path = npm-templace
+	url = http://192.168.0.161/vue/npm-templace.git
+	branch = vue-preject-dev
+[submodule "vue3-preject-template"]
+	path = vue3-preject-template
+	url = http://192.168.0.161/module1/fb-vue3-template.git
+	branch = main
+[submodule "fb-vue2-template"]
+	path = fb-vue2-template
+	url = http://192.168.0.161/module1/fb-vue2-template.git
+[submodule "web-components-template"]
+	path = web-components-template
+	url = http://192.168.0.161/guochanhua/product-develop-group/dependencies-npm/web-components-template.git
+[submodule "web-components-solid-template"]
+	path = web-components-solid-template
+	url = http://192.168.0.161/guochanhua/product-develop-group/dependencies-npm/web-components-solid-template.git
