@@ -1,4 +1,4 @@
-# fb-cli
+# xh-cli
 
 一个用于快速创建和初始化新组件项目的命令行工具。支持多种项目模板，包括 Vue2/Vue3 项目模板、组件库模板等，帮助开发者快速搭建项目基础结构。
 
@@ -15,17 +15,17 @@
 ### 全局安装（推荐）
 
 ```shell
-npm install -g fb-cli
+npm install -g xh-cli
 ```
 
-安装完成后，可以在任意目录使用 `fb-cli` 命令。
+安装完成后，可以在任意目录使用 `xh-cli` 命令。
 
 ### 临时使用
 
 如果不想全局安装，可以使用 `npx` 直接运行：
 
 ```shell
-npx fb-cli
+npx xh-cli
 ```
 
 ## 使用方法
@@ -35,11 +35,11 @@ npx fb-cli
 1. 在目标目录下运行命令：
 
 ```shell
-fb-cli
+xh-cli
 ```
 
 2. 按照提示输入项目信息：
-   - **项目名称**：输入符合 npm 包命名规范的项目名称（如：`@fb-cli/rollup-npm-template`）
+   - **项目名称**：输入符合 npm 包命名规范的项目名称（如：`@xh-cli/rollup-npm-template`）
    - **项目描述**：输入项目的简要描述
    - **作者名称**：输入作者名称
 
@@ -51,7 +51,7 @@ fb-cli
 
 ```shell
 # 1. 运行命令
-fb-cli
+xh-cli
 
 # 2. 交互式输入
 ? 输入项目名称: @my-org/my-component
@@ -92,10 +92,10 @@ cat README.md
 - 支持 Vue2 项目引入
 - 自动化构建、CDN 上传、npm 发布
 - **要求：Node.js ^20.19.0 || >=22.12.0**
-- **模板地址**：[web-components-template](http://192.168.0.161/guochanhua/product-develop-group/dependencies-npm/web-components-template)
+- **模板地址**：
 - **创建后**：进入项目执行 `npm install`，运行 `npm run dev` 启动开发；完整文档见项目内 `doc/README.md`
 
-### 3. fb-vue2-template
+### 3. xh-vue2-template
 **Vue2 + Vite项目模板**
 
 - 基于 Vite + Vue2 + ElementUI 的完整项目开发模板
@@ -155,7 +155,7 @@ cat README.md
    - 必须符合 npm 包命名规范
    - 支持作用域包（如：`@org/package-name`）
    - 不支持驼峰命名
-   - 示例：`@fb-cli/rollup-npm-template` ✅ | `myComponent` ❌
+   - 示例：`@xh-cli/rollup-npm-template` ✅ | `myComponent` ❌
 
 2. **目录覆盖**：
    - 如果目标目录已存在，工具会提示是否继续
@@ -174,13 +174,13 @@ A: 请确保项目名称符合 npm 包命名规范：
 - 不能使用驼峰命名，应使用连字符或下划线
 
 ### Q: 如何更新模板？
-A: 模板文件位于 `fb-cli` 安装目录下的对应模板文件夹中，更新模板后需要重新发布 npm 包。
+A: 模板文件位于 `xh-cli` 安装目录下的对应模板文件夹中，更新模板后需要重新发布 npm 包。
 
 ### Q: 创建的项目在哪里？
 A: 项目会创建在当前执行命令的目录下，以项目名称作为文件夹名称。
 
 ### Q: 如何自定义模板？
-A: 可以在 `fb-cli` 的源码目录中添加新的模板文件夹，然后修改 `cli.js` 中的模板选项列表。
+A: 可以在 `xh-cli` 的源码目录中添加新的模板文件夹，然后修改 `cli.js` 中的模板选项列表。
 
 ## 开发
 
@@ -188,10 +188,10 @@ A: 可以在 `fb-cli` 的源码目录中添加新的模板文件夹，然后修�
 
 ```shell
 # 克隆项目
-git clone http://192.168.0.161/module/fb-cli.git
+git clone https://github.com/dzgcsmthmt/cli
 
 # 进入项目目录
-cd fb-cli
+cd xh-cli
 
 # 安装依赖
 npm install
@@ -203,7 +203,7 @@ node cli.js
 ### 项目结构
 
 ```
-fb-cli/
+xh-cli/
 ├── cli.js              # 主入口文件
 ├── editPackage.js      # package.json 处理逻辑
 ├── copyFiles/          # 基础文件模板
@@ -212,7 +212,7 @@ fb-cli/
 │   └── gitignore
 ├── rollup-npm-template/       # Rollup 组件库模板
 ├── web-components-template/  # Web Components 组件库模板
-├── fb-vue2-template/          # Vue2 项目模板
+├── xh-vue2-template/          # Vue2 项目模板
 ├── vue3-preject-template/     # Vue3 项目模板
 └── npm-templace/              # Vue2 传统组件库模板
 ```
@@ -227,9 +227,5 @@ fb-cli/
 - rollup-npm-template 支持 prettier
 
 ## 许可证
+MIT
 
-ISC
-
-## 联系方式
-
-如有问题或建议，请访问：[项目主页](http://192.168.0.161/module/fb-cli)
